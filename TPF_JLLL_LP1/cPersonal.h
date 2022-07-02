@@ -3,15 +3,15 @@
 #include "cLibrerias.h"
 #include "cFechayHora.h"
 
-class cPaciente
+class cPersonal
 {
-private:
+protected:
 	const string DNI;
 	string Nombre;
-	cFechayHora* FechaNacimiento;
 	//eSexo Sexo;
-	const string ObraSocial;
-	string NumAfiliado;
+	cFechayHora* FechaNaciemiento; 
+public: 
+
 
 
 };

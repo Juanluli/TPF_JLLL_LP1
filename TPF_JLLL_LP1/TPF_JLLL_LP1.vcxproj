@@ -144,6 +144,7 @@
     <ClCompile Include="cIntervencion.cpp" />
     <ClCompile Include="cLista_template.cpp" />
     <ClCompile Include="cPaciente.cpp" />
+    <ClCompile Include="cPersonal.cpp" />
     <ClCompile Include="TPF_JLLL_LP1.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +154,7 @@
     <ClInclude Include="cLibrerias.h" />
     <ClInclude Include="cLista_template.h" />
     <ClInclude Include="cPaciente.h" />
+    <ClInclude Include="cPersonal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
