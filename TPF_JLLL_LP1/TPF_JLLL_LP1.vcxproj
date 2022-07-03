@@ -139,22 +139,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cCirugia.cpp" />
+    <ClCompile Include="cConsulta.cpp" />
+    <ClCompile Include="cEnfermero.cpp" />
     <ClCompile Include="cFechayHora.cpp" />
     <ClCompile Include="cHistoriaClinica.cpp" />
     <ClCompile Include="cIntervencion.cpp" />
     <ClCompile Include="cLista_template.cpp" />
+    <ClCompile Include="cMedicamento.cpp" />
+    <ClCompile Include="cMedico.cpp" />
     <ClCompile Include="cPaciente.cpp" />
     <ClCompile Include="cPersonal.cpp" />
+    <ClCompile Include="cPracticas.cpp" />
     <ClCompile Include="TPF_JLLL_LP1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cCirugia.h" />
+    <ClInclude Include="cConsulta.h" />
+    <ClInclude Include="cEnfermero.h" />
     <ClInclude Include="cFechayHora.h" />
     <ClInclude Include="cHistoriaClinica.h" />
     <ClInclude Include="cIntervencion.h" />
     <ClInclude Include="cLibrerias.h" />
     <ClInclude Include="cLista_template.h" />
+    <ClInclude Include="cMedicamento.h" />
+    <ClInclude Include="cMedico.h" />
     <ClInclude Include="cPaciente.h" />
     <ClInclude Include="cPersonal.h" />
+    <ClInclude Include="cPracticas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
