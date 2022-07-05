@@ -9,9 +9,11 @@ protected:
 	const string DNI;
 	string Nombre;
 	//eSexo Sexo;
-	cFechayHora* FechaNaciemiento; 
-public: 
+	const cFechayHora* FechaNaciemiento; 
 
+public: 
+	cPersonal(const string dni, string nombre, const cFechayHora* fechaNacimiento);
+	virtual ~cPersonal();
 
 
 };

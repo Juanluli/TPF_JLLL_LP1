@@ -8,12 +8,14 @@
 class cHistoriaClinica
 {
 private:
-	static const string ID_HistoriaClinica;
-	cPaciente* cPaciente;
+	static int ID_HistoriaClinica;
+	cPaciente* Paciente;
 	bool Internado;
 	cLista_template<cIntervencion>* Lista_intervenciones;
 
 public: 
+	cHistoriaClinica(cPaciente* paciente, bool internado);
+	~cHistoriaClinica();
 
 
 };

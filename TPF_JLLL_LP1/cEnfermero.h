@@ -11,6 +11,9 @@ private:
 	const string Num_Matricula;
 	bool Turno_Trabajo;
 public:
+	cEnfermero(const string dni, string nombre, const cFechayHora* fechaNacimiento, const string num_Matricula, bool turno_Trabajo);
+	~cEnfermero();
 
+	void ModificarListaMedicamentos();
 };
 

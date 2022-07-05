@@ -25,7 +25,7 @@ public:
 	void operator+(t* objeto);
 	t* operator[](int i);
 
-	friend ostream& operator<< <>(ostream&, const cLista_template<t>&);
+	// friend ostream& operator<< <>(ostream&, const cLista_template<t>&); ///// LA HE COMENTADO YO
 
 	int get_cant_actual() {
 		return this->Cant_actual;

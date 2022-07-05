@@ -12,7 +12,10 @@ protected:
 	string Diagnostico;
 	cFechayHora* FechayHoraIntervencion;
 	float MontoAbonar;
-private:
+public:
+	cIntervencion(cMedico* medico, string diagnostico, float montoAbonar);
+	~cIntervencion(); //debe ser virtual
+
+	virtual void RealizarIntervencion() = 0;
 
 };
-

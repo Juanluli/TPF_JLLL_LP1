@@ -8,9 +8,13 @@ class cPracticas :
 {
 private: 
 	string Informe;
-	bool ObSoAutorizado;
+	bool OSAutorizado;
 public:
+	cPracticas(cMedico* medico, string diagnostico, float montoAbonar, string informe, bool oSAutorizado);
+	~cPracticas();
 
+	void RealizarIntervencion();
+	void PedirAutorizacionOS();
 
 };
 

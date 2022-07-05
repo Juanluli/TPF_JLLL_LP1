@@ -17,8 +17,13 @@ private:
 	float Duracion;
 	cLista_template<cMedicamento>* ListaMedicamentos;
 	cFechayHora* FechaAlta;
-public:
 
+public:
+	cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool ambulatorio, cMedico* medicoAd, cEnfermero* enfermero, string nombreProcedimiento, float duracion);
+	~cCirugia();
+
+	void RealizarIntervencion();
+	void Prequirurgico();
 
 };
 
