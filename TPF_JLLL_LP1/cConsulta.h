@@ -13,5 +13,7 @@ public:
 	~cConsulta();
 
 	void RealizarIntervencion();
+
+	void ImprimirInformacion(); //Imprime las Indicaciones y el Diagnostico
 };
 

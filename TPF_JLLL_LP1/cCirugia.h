@@ -23,6 +23,7 @@ public:
 	~cCirugia();
 
 	void RealizarIntervencion();
+
 	void Prequirurgico();
 
 };

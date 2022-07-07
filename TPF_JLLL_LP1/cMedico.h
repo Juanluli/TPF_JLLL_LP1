@@ -14,7 +14,7 @@ public:
 	cMedico(const string dni, string nombre, const cFechayHora* fechaNacimiento, const string num_Matricula, string especialidad);
 	~cMedico();
 
-	void AgregarEvento();
+	void AgregarEventoHistoria();
 	void DarAltaPaciente();
 	void ModificarIndicacionesConsultas();
 	void ModificarDiagnosticos();

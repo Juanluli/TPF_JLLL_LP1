@@ -12,3 +12,5 @@ cConsulta::~cConsulta()
 }
 
 void cConsulta::RealizarIntervencion() {}
+
+void cConsulta::ImprimirInformacion() {}

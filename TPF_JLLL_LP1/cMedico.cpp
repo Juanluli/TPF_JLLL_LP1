@@ -11,7 +11,7 @@ cMedico:: ~cMedico()
 }
 
 
-void cMedico::AgregarEvento() 
+void cMedico::AgregarEventoHistoria() 
 {
 
 }

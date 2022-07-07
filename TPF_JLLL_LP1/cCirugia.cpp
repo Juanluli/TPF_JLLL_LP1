@@ -12,4 +12,5 @@ cCirugia::cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool 
 }
 
 void cCirugia::RealizarIntervencion() {}
+
 void cCirugia::Prequirurgico() {}

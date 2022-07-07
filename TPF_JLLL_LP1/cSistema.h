@@ -14,5 +14,7 @@ private:
 public:
 	cSistema();
 	~cSistema();
+
+	void Agregar();
 };
 

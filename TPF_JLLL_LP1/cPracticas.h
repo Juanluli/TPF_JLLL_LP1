@@ -14,6 +14,7 @@ public:
 	~cPracticas();
 
 	void RealizarIntervencion();
+
 	void PedirAutorizacionOS();
 
 };
