@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CINTERVENCION_H
+#define CINTERVENCION_H
 
 #include "cLibrerias.h"
 #include "cMedico.h"
@@ -14,8 +15,14 @@ protected:
 	float MontoAbonar;
 public:
 	cIntervencion(cMedico* medico, string diagnostico, float montoAbonar);
-	~cIntervencion(); //debe ser virtual
+	virtual ~cIntervencion(); //debe ser virtual
 
 	virtual void RealizarIntervencion() = 0;
 
+	void setDiagnostico(string diagnostico) { this->Diagnostico = diagnostico; }
+
 };
+
+
+
+#endif

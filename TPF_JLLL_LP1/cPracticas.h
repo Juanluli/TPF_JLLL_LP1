@@ -3,7 +3,10 @@
 #include "cLibrerias.h"
 #include "cIntervencion.h"
 
-class cPracticas :
+#ifndef CPRACTICAS_H
+#define CPRACTICAS_H
+
+class cPracticas:
 	public cIntervencion
 {
 private: 
@@ -18,4 +21,6 @@ public:
 	void PedirAutorizacionOS();
 
 };
+
+#endif // !CPRACTICAS_H
 

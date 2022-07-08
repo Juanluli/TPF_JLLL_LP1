@@ -10,5 +10,11 @@ cHistoriaClinica::cHistoriaClinica(cPaciente* paciente, bool internado)
 
 cHistoriaClinica::~cHistoriaClinica()
 {
+	delete this->Lista_intervenciones;
+}
 
+
+void cHistoriaClinica::AgregarIntervencion(cIntervencion* intervencion)
+{
+	this->Lista_intervenciones->Agregar(intervencion);
 }

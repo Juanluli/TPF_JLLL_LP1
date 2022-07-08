@@ -5,3 +5,6 @@
 #include <string.h>
 
 using namespace std;
+
+class cIntervencion;
+class cMedico;

@@ -11,6 +11,14 @@ cCirugia::cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool 
 	this->FechaAlta = new cFechayHora();
 }
 
+cCirugia::~cCirugia()
+{
+
+}
+
 void cCirugia::RealizarIntervencion() {}
 
 void cCirugia::Prequirurgico() {}
+
+
+

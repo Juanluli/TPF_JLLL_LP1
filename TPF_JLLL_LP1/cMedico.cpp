@@ -10,22 +10,22 @@ cMedico:: ~cMedico()
 
 }
 
-
-void cMedico::AgregarEventoHistoria() 
+void cMedico::AgregarEventoHistoria(cIntervencion* intervencion, cHistoriaClinica* historiaClinica)
 {
-
+	historiaClinica->AgregarIntervencion(intervencion);
 }
 
-void cMedico::DarAltaPaciente()
+void cMedico::DarAltaPaciente(cHistoriaClinica* historiaClinica)
 {
-
+	historiaClinica->setInternado(false);
 }
 
-void cMedico::ModificarIndicacionesConsultas() {
-
+void cMedico::ModificarIndicacionesConsultas(cIntervencion* intervencion, string indicaciones) {
+	cConsultas* consulta = dynamic_cast<cConsultas*>(intervencion);
+	if (consulta != NULL) consulta->setIndicaciones(indicaciones);
 }
 
-void cMedico::ModificarDiagnosticos()
+void cMedico::ModificarDiagnosticos(cIntervencion* intervencion, string diagnostico)
 {
-
+	intervencion->setDiagnostico(diagnostico);
 }

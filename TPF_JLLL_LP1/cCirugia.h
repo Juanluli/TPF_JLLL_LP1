@@ -2,6 +2,7 @@
 
 #include "cLibrerias.h"
 #include "cIntervencion.h"
+#include "cMedico.h"
 #include "cEnfermero.h"
 #include "cLista_template.h"
 #include "cMedicamento.h"

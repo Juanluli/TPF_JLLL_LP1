@@ -1,9 +1,12 @@
-#pragma once
 
 #include "cLibrerias.h"
 #include "cPaciente.h"
 #include "cLista_template.h"
 #include "cIntervencion.h"
+
+
+#ifndef CHISTORIACLINICA_H
+#define CHISTORIACLINICA_H
 
 class cHistoriaClinica
 {
@@ -17,6 +20,10 @@ public:
 	cHistoriaClinica(cPaciente* paciente, bool internado);
 	~cHistoriaClinica();
 
+	void AgregarIntervencion(cIntervencion* intervencion);
+
+	void setInternado(bool internado) { this->Internado = internado;  }
 
 };
 
+#endif 

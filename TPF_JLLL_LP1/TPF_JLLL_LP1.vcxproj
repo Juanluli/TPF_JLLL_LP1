@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cCirugia.cpp" />
-    <ClCompile Include="cConsulta.cpp" />
+    <ClCompile Include="cConsultas.cpp" />
     <ClCompile Include="cEnfermero.cpp" />
     <ClCompile Include="cFechayHora.cpp" />
     <ClCompile Include="cHistoriaClinica.cpp" />
@@ -156,7 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cCirugia.h" />
-    <ClInclude Include="cConsulta.h" />
+    <ClInclude Include="cConsultas.h" />
     <ClInclude Include="cEnfermero.h" />
     <ClInclude Include="cFechayHora.h" />
     <ClInclude Include="cHistoriaClinica.h" />

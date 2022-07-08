@@ -1,7 +1,10 @@
-#pragma once
+
 
 #include "cLibrerias.h"
 #include "cFechayHora.h"
+
+#ifndef CPACIENTE_H
+#define CPACIENTE_H
 
 class cPaciente
 {
@@ -18,3 +21,4 @@ public:
 
 };
 
+#endif // !CPACIENTE_H
