@@ -21,23 +21,35 @@ void cCirugia::RealizarIntervencion(cPaciente* paciente) {}
 
 void cCirugia::Prequirurgico(cPaciente* paciente) {
 	if (paciente->Ayunas = true) 
-	{	if(paciente->Sexo == Hombre && 40 < paciente->Hematocrito < 45)
+	{
+		if (paciente->Sexo == Hombre && 40 < paciente->Hematocrito < 45)
 		{
-			if(paciente->Edad <= 25 && paciente->Saturacion <= 97)
+			if (paciente->Edad <= 25 && paciente->Saturacion >= 97)
 			{
 				this->RealizarIntervencion(paciente);
 			}
-			else throw exception ("No cumple los requisitos");
+			else if(paciente->Edad > 25 && paciente->Saturacion >= 95)
+			{
+				this->RealizarIntervencion(paciente);
+			}
+			else throw exception("No cumple los requisitos");
+		}
+		else if (paciente->Sexo == Mujer && 38 < paciente->Hematocrito < 42)
+		{
+			if (paciente->Edad <= 25 && paciente->Saturacion >= 97)
+			{
+				this->RealizarIntervencion(paciente);
+			}
+			else if(paciente->Edad > 25 && paciente->Saturacion >= 95)
+			{
+				this->RealizarIntervencion(paciente);
+			}
+			else throw exception("No cumple los requisitos");
 		}
 		else throw exception("No cumple los requisitos");
-
 	}
 	else throw exception("No cumple los requisitos");
 }
-
-
-
-
 
 void cCirugia::AgregarMedicamento(cMedicamento* medicamento)
 {

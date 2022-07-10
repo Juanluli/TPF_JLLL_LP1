@@ -18,19 +18,19 @@ private:
 	string Nombre;
 	const cFechayHora* FechaNacimiento;
 	eSexo Sexo;
-	const string ObraSocial;
+	bool ObraSocial;
 	string NumAfiliado;
 	bool Ayunas;
 	int Hematocrito;
 	int Saturacion;
 	int Edad;
 public: 
-	cPaciente(const string dni, string nombre, eSexo sexo, const cFechayHora* fechaNacimiento, const string obraSocial, string numAfiliado, bool ayunas, int hematocrito, int saturacion, int edad);
+	cPaciente(const string dni, string nombre, eSexo sexo, const cFechayHora* fechaNacimiento, bool obraSocial, string numAfiliado, bool ayunas, int hematocrito, int saturacion, int edad);
 	~cPaciente();
 
 	bool getAyunas() { return this->Ayunas;  }
+	bool getObraSocial() { return this->ObraSocial; }
 
-	int CalcularEdad(cFechayHora* fechaNacimiento);
 };
 
 #endif // !CPACIENTE_H

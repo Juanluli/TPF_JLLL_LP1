@@ -18,7 +18,7 @@ public:
 
 	void RealizarIntervencion();
 
-	void PedirAutorizacionOS();
+	void PedirAutorizacionOS(cPaciente* paciente);
 
 };
 

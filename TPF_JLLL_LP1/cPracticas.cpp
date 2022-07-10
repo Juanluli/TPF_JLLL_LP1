@@ -12,5 +12,12 @@ cPracticas::~cPracticas()
 }
 
 void cPracticas::RealizarIntervencion() {}
-void cPracticas::PedirAutorizacionOS(){}
+
+void cPracticas::PedirAutorizacionOS(cPaciente* paciente)
+{
+	if (paciente->getObraSocial() == true) {
+		this->OSAutorizado == true;
+	}
+	else this->OSAutorizado == false;
+}
 

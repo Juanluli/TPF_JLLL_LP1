@@ -5,6 +5,7 @@
 
 class cFechayHora
 {
+	friend class cPaciente;
 private:
 	tm fecha;
 public:
@@ -18,6 +19,8 @@ public:
 	int get_mes() { return this->fecha.tm_mon; }
 
 	int get_anio() { return this->fecha.tm_year; }
+
+	int get_dia() { return this->fecha.tm_mday;  }
 
 //	bool Cual_es_anterior(cFechayHora* fecha); // compara dos fechas. true: this es anterior. false: fecha es anterior.
 };
