@@ -13,5 +13,7 @@ private:
 public:
 	cMedicamento(string nombre, string marca, cFechayHora* fechaVencimiento);
 	~cMedicamento();
+
+	cFechayHora* getFechaVencimiento() { return this->FechaVencimiento; }
 };
 

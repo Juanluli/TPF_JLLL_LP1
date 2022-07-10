@@ -5,7 +5,6 @@ cConsultas::cConsultas(cMedico* medico, string diagnostico, float montoAbonar, s
 	this->Indicaciones = indicaciones;
 }
 
-
 cConsultas::~cConsultas()
 {
 
@@ -13,4 +12,8 @@ cConsultas::~cConsultas()
 
 void cConsultas::RealizarIntervencion() {}
 
-void cConsultas::ImprimirInformacion() {}
+void cConsultas::ImprimirInformacion(string diagnostico, string indicaciones)
+{
+	cout << "El paciente ha recibido las indicaciones de: " << indicaciones << endl;
+	cout << "Ademas, su diagnóstico es: " << diagnostico << endl;
+}

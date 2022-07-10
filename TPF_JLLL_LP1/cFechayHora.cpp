@@ -56,3 +56,13 @@ void cFechayHora::SetHoy()
 	fecha.tm_min = aux->tm_min;
 	fecha.tm_sec = aux->tm_sec;
 }
+
+/*
+bool cFechayHora::Cual_es_anterior(cFechayHora* fecha)
+{
+	if (*this < *fecha) //si this es anterior a fecha, retorno true
+		return true;
+	else
+		return false;
+}
+*/

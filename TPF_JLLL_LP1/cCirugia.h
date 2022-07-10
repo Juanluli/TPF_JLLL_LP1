@@ -15,6 +15,7 @@ private:
 	cMedico* MedicoAd;
 	cEnfermero* Enfermero;
 	string NombreProcedimiento;
+	cFechayHora* FechayHoraInicio;
 	float Duracion;
 	cLista_template<cMedicamento>* ListaMedicamentos;
 	cFechayHora* FechaAlta;
@@ -23,9 +24,12 @@ public:
 	cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool ambulatorio, cMedico* medicoAd, cEnfermero* enfermero, string nombreProcedimiento, float duracion);
 	~cCirugia();
 
-	void RealizarIntervencion();
+	void RealizarIntervencion(cPaciente* paciente);
 
-	void Prequirurgico();
+	void Prequirurgico(cPaciente* paciente);
+
+	void AgregarMedicamento(cMedicamento* medicamento);
+
 
 };
 

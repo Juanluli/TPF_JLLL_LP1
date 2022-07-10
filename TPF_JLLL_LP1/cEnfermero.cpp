@@ -10,7 +10,19 @@ cEnfermero::~cEnfermero()
 
 }
 
-void cEnfermero::ModificarListaMedicamentos()
+void cEnfermero::ModificarListaMedicamentos(cIntervencion* intervencion, cMedicamento* medicamento) //comprobar que no están vencidos
 {
 
+	cCirugia* cirugia = dynamic_cast<cCirugia*>(intervencion);
+	if (cirugia != NULL) cirugia->AgregarMedicamento(medicamento);
+
+	//¡REALMENTE SE TIENE QUE COMPROBAR QUE NO ESTÁN VENCIDOS!
+	/*if (medicamento->getFechaVencimiento->get_anio < intervencion->getFechayHoraIntervencion->get_anio)
+	{
+		cCirugia* cirugia = dynamic_cast<cCirugia*>(intervencion);
+		if (cirugia != NULL) cirugia->AgregarMedicamento(medicamento);
+	}
+	else throw exception("El medicamento esta caducado, la lista no puede ser modificada");
+	*/
 }
+

@@ -18,5 +18,7 @@ public:
 	int get_mes() { return this->fecha.tm_mon; }
 
 	int get_anio() { return this->fecha.tm_year; }
+
+//	bool Cual_es_anterior(cFechayHora* fecha); // compara dos fechas. true: this es anterior. false: fecha es anterior.
 };
 

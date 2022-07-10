@@ -13,7 +13,7 @@ public:
 
 	void RealizarIntervencion();
 
-	void ImprimirInformacion(); //Imprime las Indicaciones y el Diagnostico
+	void ImprimirInformacion(string diagnostico, string indicaciones); //Imprime las Indicaciones y el Diagnostico
 
 	void setIndicaciones(string indicaciones) { this->Indicaciones = indicaciones; }
 };

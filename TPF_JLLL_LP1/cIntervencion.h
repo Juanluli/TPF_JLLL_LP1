@@ -21,6 +21,8 @@ public:
 
 	void setDiagnostico(string diagnostico) { this->Diagnostico = diagnostico; }
 
+	cFechayHora* getFechayHoraIntervencion() { return this->FechayHoraIntervencion; }
+
 };
 
 
