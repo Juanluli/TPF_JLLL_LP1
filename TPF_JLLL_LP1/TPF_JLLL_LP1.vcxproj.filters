@@ -57,6 +57,9 @@
     <ClCompile Include="cConsultas.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="cIntervencionT.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cHistoriaClinica.h">
@@ -99,6 +102,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="cConsultas.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="cIntervencionT.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

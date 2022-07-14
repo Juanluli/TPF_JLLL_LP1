@@ -145,6 +145,7 @@
     <ClCompile Include="cFechayHora.cpp" />
     <ClCompile Include="cHistoriaClinica.cpp" />
     <ClCompile Include="cIntervencion.cpp" />
+    <ClCompile Include="cIntervencionT.cpp" />
     <ClCompile Include="cLista_template.cpp" />
     <ClCompile Include="cMedicamento.cpp" />
     <ClCompile Include="cMedico.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="cFechayHora.h" />
     <ClInclude Include="cHistoriaClinica.h" />
     <ClInclude Include="cIntervencion.h" />
+    <ClInclude Include="cIntervencionT.h" />
     <ClInclude Include="cLibrerias.h" />
     <ClInclude Include="cLista_template.h" />
     <ClInclude Include="cMedicamento.h" />

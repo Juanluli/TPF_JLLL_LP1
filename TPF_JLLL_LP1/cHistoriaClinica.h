@@ -2,7 +2,7 @@
 #include "cLibrerias.h"
 #include "cPaciente.h"
 #include "cLista_template.h"
-#include "cIntervencion.h"
+#include "cIntervencionT.h"
 
 
 #ifndef CHISTORIACLINICA_H

@@ -4,7 +4,8 @@
 #include "cFechayHora.h"
 #include "cPersonal.h"
 #include "cMedicamento.h"
-#include "cCirugia.h"
+#include "cIntervencionT.h"
+//#include "cCirugia.h"
 
 class cEnfermero:
 	public cPersonal

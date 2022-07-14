@@ -1,4 +1,4 @@
-#include "cIntervencion.h"
+/*#include "cIntervencion.h"
 
 cIntervencion::cIntervencion(cMedico* medico, string diagnostico, float montoAbonar)
 {
@@ -12,3 +12,4 @@ cIntervencion::~cIntervencion()
 {
 
 }
+*/

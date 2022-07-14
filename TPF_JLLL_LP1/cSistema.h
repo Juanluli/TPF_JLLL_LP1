@@ -4,9 +4,10 @@
 #include "cLista_template.h"
 #include "cHistoriaClinica.h"
 #include "cPersonal.h" //tambien funciona si lo quitamos
-#include "cCirugia.h"
-#include "cConsultas.h"
-#include "cPracticas.h"
+#include "cIntervencionT.h"
+// #include "cCirugia.h"
+// #include "cConsultas.h"
+// #include "cPracticas.h"
 
 class cSistema
 {

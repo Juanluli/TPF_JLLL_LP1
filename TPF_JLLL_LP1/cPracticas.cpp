@@ -1,4 +1,4 @@
-#include "cPracticas.h"
+/*include "cPracticas.h"
 
 cPracticas::cPracticas(cMedico* medico, string diagnostico, float montoAbonar, string informe, bool oSAutorizado) : cIntervencion(medico, diagnostico, montoAbonar)
 {
@@ -21,3 +21,4 @@ void cPracticas::PedirAutorizacionOS(cPaciente* paciente)
 	else this->OSAutorizado == false;
 }
 
+*/

@@ -1,4 +1,4 @@
-#ifndef CINTERVENCION_H
+/*#ifndef CINTERVENCION_H
 #define CINTERVENCION_H
 
 #include "cLibrerias.h"
@@ -29,3 +29,4 @@ public:
 
 
 #endif
+*/

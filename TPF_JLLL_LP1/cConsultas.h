@@ -1,5 +1,4 @@
-#pragma once
-
+/*
 #include "cIntervencion.h"
 
 class cConsultas :
@@ -17,4 +16,4 @@ public:
 
 	void setIndicaciones(string indicaciones) { this->Indicaciones = indicaciones; }
 };
-
+*/

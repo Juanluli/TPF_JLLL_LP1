@@ -3,7 +3,8 @@
 #include "cFechayHora.h"
 #include "cPersonal.h"
 #include "cHistoriaClinica.h"
-#include "cConsultas.h"
+#include "cIntervencionT.h"
+// #include "cConsultas.h"
 
 
 #ifndef CMEDICO_H

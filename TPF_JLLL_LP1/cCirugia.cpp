@@ -1,4 +1,4 @@
-#include "cCirugia.h"
+/*/#include "cCirugia.h"
 
 cCirugia::cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool ambulatorio, cMedico* medicoAd, cEnfermero* enfermero, string nombreProcedimiento, float duracion): cIntervencion(medico, diagnostico, montoAbonar)
 {
@@ -57,4 +57,4 @@ void cCirugia::AgregarMedicamento(cMedicamento* medicamento)
 }
 
 
-
+*/

@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 
 #include "cLibrerias.h"
 #include "cIntervencion.h"
@@ -35,3 +35,4 @@ public:
 
 };
 
+*/
