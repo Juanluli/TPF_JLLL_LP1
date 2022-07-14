@@ -25,6 +25,8 @@ public:
 	void AgregarIntervencion(cIntervencion* intervencion);
 
 	void setInternado(bool internado) { this->Internado = internado; }
+
+	cPaciente* getPaciente() { return this->Paciente; }
 };
 
 #endif 

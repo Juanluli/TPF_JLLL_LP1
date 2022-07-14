@@ -17,7 +17,7 @@ public:
 	cIntervencion(cMedico* medico, string diagnostico, float montoAbonar);
 	virtual ~cIntervencion(); //debe ser virtual
 
-	virtual void RealizarIntervencion() = 0;
+	virtual void RealizarIntervencion(cHistoriaClinica* historiaClinica, cPaciente* paciente) = 0;
 
 	void setDiagnostico(string diagnostico) { this->Diagnostico = diagnostico; }
 
@@ -46,9 +46,9 @@ public:
 	cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool ambulatorio, cMedico* medicoAd, cEnfermero* enfermero, string nombreProcedimiento, float duracion);
 	~cCirugia();
 
-	void RealizarIntervencion(cPaciente* paciente);
+	void RealizarIntervencion(cHistoriaClinica* historiaClinica);
 
-	void Prequirurgico(cPaciente* paciente);
+	bool Prequirurgico(cPaciente* paciente);
 
 	void AgregarMedicamento(cMedicamento* medicamento);
 
@@ -56,7 +56,6 @@ public:
 };
 
 //Clase Consultas
-
 class cConsultas :
 	public cIntervencion
 {
@@ -66,7 +65,7 @@ public:
 	cConsultas(cMedico* medico, string diagnostico, float montoAbonar, string indicaciones);
 	~cConsultas();
 
-	void RealizarIntervencion();
+	void RealizarIntervencion(cHistoriaClinica* historiaClinica);
 
 	void ImprimirInformacion(string diagnostico, string indicaciones); //Imprime las Indicaciones y el Diagnostico
 
@@ -74,7 +73,6 @@ public:
 };
 
 //Clase Practicas
-
 class cPracticas :
 	public cIntervencion
 {
@@ -85,7 +83,7 @@ public:
 	cPracticas(cMedico* medico, string diagnostico, float montoAbonar, string informe, bool oSAutorizado);
 	~cPracticas();
 
-	void RealizarIntervencion();
+	void RealizarIntervencion(cHistoriaClinica* historiaClinica); //debe actualizar informe
 
 	void PedirAutorizacionOS(cPaciente* paciente);
 

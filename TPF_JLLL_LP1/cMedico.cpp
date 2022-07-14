@@ -21,9 +21,8 @@ void cMedico::DarAltaPaciente(cHistoriaClinica* historiaClinica)
 }
 
 void cMedico::ModificarIndicacionesConsultas(cIntervencion* intervencion, string indicaciones) {
-	/*cConsultas* consulta = dynamic_cast<cConsultas*>(intervencion);
+	cConsultas* consulta = dynamic_cast<cConsultas*>(intervencion);
 	if (consulta != NULL) consulta->setIndicaciones(indicaciones);
-	*/
 }
 
 void cMedico::ModificarDiagnosticos(cIntervencion* intervencion, string diagnostico)
