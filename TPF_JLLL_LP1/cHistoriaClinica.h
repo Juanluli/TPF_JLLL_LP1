@@ -10,6 +10,8 @@
 
 class cHistoriaClinica
 {
+	friend class cSistema; 
+
 private:
 	static int ID_HistoriaClinica;
 	cPaciente* Paciente;

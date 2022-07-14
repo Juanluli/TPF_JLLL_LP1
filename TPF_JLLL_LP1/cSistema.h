@@ -16,9 +16,9 @@ public:
 	~cSistema();
 
 	void Agregar(cHistoriaClinica* historiaClinica, cPersonal* pesonal);
-	void Eliminar();
-	void Quitar();
-	void Buscar();
+	void Eliminar(cHistoriaClinica* historiaClinica, cPersonal* pesonal);
+	void Quitar(cHistoriaClinica* historiaClinica, cPersonal* personal);
+	void Buscar(cHistoriaClinica* historiaClinica, cPersonal* personal);
 	void Listar();
 	void Buscar(string dni, string iD_HistoriaClinica);
 	void ImprimirProcedimiento();

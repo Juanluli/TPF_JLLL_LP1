@@ -20,6 +20,7 @@ public:
 	void Agregar(t* objeto);
 	void Eliminar(t* objeto);
 	int Buscar(t* objeto);
+	int Quitar(t* objeto);
 	void resize();
 
 	void operator+(t* objeto);
@@ -116,6 +117,22 @@ int cLista_template<t>::Buscar(t* objeto)
 		}
 	}
 	return -1; //si no lo encuentro
+}
+
+template <class t>
+int cLista_template<t>::Quitar(t* objeto)
+{
+	unsigned int i = Buscar(objeto);
+	if (i >= Cant_actual)return NULL;
+	t* aux = NULL;
+	aux = Lista[i];
+	Cant_actual--;
+	for (unsigned int j = i; j < Cant_actual; j++)
+	{
+		Lista[j] = Lista[j + 1];
+	}
+	Lista[Cant_actual] = NULL;
+	return i;
 }
 
 //cambia el tamaño de la lista
