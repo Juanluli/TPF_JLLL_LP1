@@ -11,3 +11,5 @@ class cIntervencion;
 class cMedico;
 class cEnfermero;
 
+enum eSexo { Hombre, Mujer };
+

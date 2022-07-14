@@ -15,6 +15,15 @@ public:
 	cSistema();
 	~cSistema();
 
-	void Agregar();
+	void Agregar(cHistoriaClinica* historiaClinica, cPersonal* pesonal);
+	void Eliminar();
+	void Quitar();
+	void Buscar();
+	void Listar();
+	void Buscar(string dni, string iD_HistoriaClinica);
+	void ImprimirProcedimiento();
+	void AgregarHistoriaClinica();
+	void CalcularGanancia();
+	void MedicamentoMasUsado();
 };
 

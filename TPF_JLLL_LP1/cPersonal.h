@@ -8,11 +8,11 @@ class cPersonal
 protected:
 	const string DNI;
 	string Nombre;
-	//eSexo Sexo;
+	eSexo Sexo;
 	const cFechayHora* FechaNaciemiento; 
 
 public: 
-	cPersonal(const string dni, string nombre, const cFechayHora* fechaNacimiento);
+	cPersonal(const string dni, string nombre, eSexo sexo, const cFechayHora* fechaNacimiento);
 	virtual ~cPersonal();
 
 

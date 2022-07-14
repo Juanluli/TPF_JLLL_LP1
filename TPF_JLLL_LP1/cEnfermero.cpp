@@ -1,6 +1,6 @@
 #include "cEnfermero.h"
 
-cEnfermero::cEnfermero(const string dni, string nombre, const cFechayHora* fechaNacimiento, const string num_Matricula, bool turno_Trabajo) : cPersonal(dni, nombre, fechaNacimiento), Num_Matricula(num_Matricula)
+cEnfermero::cEnfermero(const string dni, string nombre, eSexo sexo, const cFechayHora* fechaNacimiento, const string num_Matricula, bool turno_Trabajo) : cPersonal(dni, nombre, sexo, fechaNacimiento), Num_Matricula(num_Matricula)
 {
 	this->Turno_Trabajo = turno_Trabajo;
 }
@@ -10,7 +10,7 @@ cEnfermero::~cEnfermero()
 
 }
 
-void cEnfermero::ModificarListaMedicamentos(cIntervencion* intervencion, cMedicamento* medicamento) //comprobar que no están vencidos
+void cEnfermero::ModificarListaMedicamentos(cIntervencion* intervencion, cMedicamento* medicamento) 
 {
 	//¡REALMENTE SE TIENE QUE COMPROBAR QUE NO ESTÁN VENCIDOS!
 	if (medicamento->getFechaVencimiento()->get_anio() > intervencion->getFechayHoraIntervencion()->get_anio()) 

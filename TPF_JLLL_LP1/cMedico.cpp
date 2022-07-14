@@ -1,6 +1,6 @@
 #include "cMedico.h"
 
-cMedico::cMedico(const string dni, string nombre, const cFechayHora* fechaNacimiento, const string num_Matricula, string especialidad):cPersonal(dni, nombre, fechaNacimiento), Num_Matricula(num_Matricula)
+cMedico::cMedico(const string dni, string nombre, eSexo sexo, const cFechayHora* fechaNacimiento, const string num_Matricula, string especialidad):cPersonal(dni, nombre, sexo, fechaNacimiento), Num_Matricula(num_Matricula)
 {
 	this->Especialidad = especialidad;
 }
@@ -21,9 +21,9 @@ void cMedico::DarAltaPaciente(cHistoriaClinica* historiaClinica)
 }
 
 void cMedico::ModificarIndicacionesConsultas(cIntervencion* intervencion, string indicaciones) {
-/*	cConsultas* consulta = dynamic_cast<cConsultas*>(intervencion);
+	/*cConsultas* consulta = dynamic_cast<cConsultas*>(intervencion);
 	if (consulta != NULL) consulta->setIndicaciones(indicaciones);
-*/
+	*/
 }
 
 void cMedico::ModificarDiagnosticos(cIntervencion* intervencion, string diagnostico)

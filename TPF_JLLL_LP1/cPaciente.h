@@ -1,16 +1,12 @@
 
-
 #include "cLibrerias.h"
 #include "cFechayHora.h"
 
 #ifndef CPACIENTE_H
 #define CPACIENTE_H
 
-enum eSexo{Hombre, Mujer};
-
 class cPaciente
 {
-
 	friend class cCirugia; // La clase cCirugia puede acceder a los atributos privados de cPaciente
 
 private:
