@@ -4,6 +4,9 @@
 #include "cLista_template.h"
 #include "cHistoriaClinica.h"
 #include "cPersonal.h" //tambien funciona si lo quitamos
+#include "cCirugia.h"
+#include "cConsultas.h"
+#include "cPracticas.h"
 
 class cSistema
 {
@@ -19,11 +22,11 @@ public:
 	void Eliminar(cHistoriaClinica* historiaClinica, cPersonal* pesonal);
 	void Quitar(cHistoriaClinica* historiaClinica, cPersonal* personal);
 	void Buscar(cHistoriaClinica* historiaClinica, cPersonal* personal);
-	void Listar();
-	void Buscar(string dni, string iD_HistoriaClinica);
+	void Listar(); //
+	cHistoriaClinica* Buscar(string dni, int iD_HistoriaClinica);
 	void ImprimirProcedimiento();
-	void AgregarHistoriaClinica();
-	void CalcularGanancia();
+	void AgregarHistoriaClinica(cHistoriaClinica* historiaClinica);
+	void CalcularGanancia(float& ganancias, int& cantPracticas, int& cantCirugias, int& cantConsultas);
 	void MedicamentoMasUsado();
 };
 

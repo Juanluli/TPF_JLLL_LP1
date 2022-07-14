@@ -20,7 +20,7 @@ public:
 	void Agregar(t* objeto);
 	void Eliminar(t* objeto);
 	int Buscar(t* objeto);
-	int Quitar(t* objeto);
+	t* Quitar(t* objeto);
 	void resize();
 
 	void operator+(t* objeto);
@@ -120,7 +120,7 @@ int cLista_template<t>::Buscar(t* objeto)
 }
 
 template <class t>
-int cLista_template<t>::Quitar(t* objeto)
+t* cLista_template<t>::Quitar(t* objeto)
 {
 	unsigned int i = Buscar(objeto);
 	if (i >= Cant_actual)return NULL;
@@ -132,7 +132,7 @@ int cLista_template<t>::Quitar(t* objeto)
 		Lista[j] = Lista[j + 1];
 	}
 	Lista[Cant_actual] = NULL;
-	return i;
+	return aux;
 }
 
 //cambia el tamaño de la lista
@@ -149,3 +149,10 @@ inline void cLista_template<t>::resize() {
 	this->Cant_max = nuevo_tam;
 }
 
+
+//sobrecarga []
+template<class t>
+inline t* cLista_template<t>::operator[](int i) //devuelve un elemento de la lista en la posicion i
+{
+	return this->Lista[i];
+}

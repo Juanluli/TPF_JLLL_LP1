@@ -24,8 +24,7 @@ public:
 
 	void AgregarIntervencion(cIntervencion* intervencion);
 
-	void setInternado(bool internado) { this->Internado = internado;  }
-
+	void setInternado(bool internado) { this->Internado = internado; }
 };
 
 #endif 

@@ -30,6 +30,8 @@ public:
 
 	void AgregarMedicamento(cMedicamento* medicamento);
 
+	cLista_template<cMedicamento>* getListaMedicamentos() { return ListaMedicamentos; }
+
 
 };
 

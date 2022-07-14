@@ -26,6 +26,7 @@ public:
 
 	bool getAyunas() { return this->Ayunas;  }
 	bool getObraSocial() { return this->ObraSocial; }
+	string getDNI() { return this->DNI; }
 
 };
 

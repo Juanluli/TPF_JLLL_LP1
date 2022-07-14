@@ -23,6 +23,7 @@ public:
 
 	cFechayHora* getFechayHoraIntervencion() { return this->FechayHoraIntervencion; }
 
+	float getMontoAbonar() { return MontoAbonar; }
 };
 
 
