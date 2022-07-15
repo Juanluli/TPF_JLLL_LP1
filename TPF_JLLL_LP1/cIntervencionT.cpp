@@ -13,9 +13,7 @@ cIntervencion::~cIntervencion()
 
 }
 
-
-//Clase Cirugia
-
+/////////////////Clase Cirugia
 cCirugia::cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool ambulatorio, cMedico* medicoAd, cEnfermero* enfermero, string nombreProcedimiento, float duracion) : cIntervencion(medico, diagnostico, montoAbonar)
 {
 	this->Ambulatorio = ambulatorio;
@@ -51,6 +49,7 @@ void cCirugia::RealizarIntervencion(cHistoriaClinica* historiaClinica) {
 		this->MontoAbonar = 0;
 		this->Ambulatorio = false;
 	}
+	cout << this->MontoAbonar << " " << this->Ambulatorio << " " << historiaClinica->getInternado() << endl;
 }
 
 bool cCirugia::Prequirurgico(cPaciente* paciente) {
@@ -104,7 +103,7 @@ void cCirugia::AgregarMedicamento(cMedicamento* medicamento)
 	this->ListaMedicamentos->Agregar(medicamento);
 }
 
-//Clase Consultas
+//////////////////////////////////Clase Consultas
 
 cConsultas::cConsultas(cMedico* medico, string diagnostico, float montoAbonar, string indicaciones) : cIntervencion(medico, diagnostico, montoAbonar)
 {
@@ -119,15 +118,16 @@ cConsultas::~cConsultas()
 void cConsultas::RealizarIntervencion(cHistoriaClinica* historiaClinica) 
 {
 	historiaClinica->setInternado(true); 
+	ImprimirInformacion(this->Diagnostico, this->Indicaciones);
 }
 
 void cConsultas::ImprimirInformacion(string diagnostico, string indicaciones)
 {
 	cout << "El paciente ha recibido las indicaciones de: " << indicaciones << endl;
-	cout << "Ademas, su diagn?stico es: " << diagnostico << endl;
+	cout << "Ademas, su diagnostico es: " << diagnostico << endl;
 }
 
-//Clase Practicas
+//////////////////////////Clase Practicas
 cPracticas::cPracticas(cMedico* medico, string diagnostico, float montoAbonar, string informe, bool oSAutorizado) : cIntervencion(medico, diagnostico, montoAbonar)
 {
 	this->Informe = informe;

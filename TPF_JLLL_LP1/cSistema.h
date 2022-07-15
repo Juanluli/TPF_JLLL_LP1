@@ -29,5 +29,7 @@ public:
 	void AgregarHistoriaClinica(cHistoriaClinica* historiaClinica);
 	void CalcularGanancia(float& ganancias, int& cantPracticas, int& cantCirugias, int& cantConsultas);
 	void MedicamentoMasUsado();
+	cLista_template<cHistoriaClinica>* getListaHistoriasClinicas() { return this->Lista_historiasClinicas; }
+	cLista_template<cPersonal>* getListaPersonal() { return this->Lista_personal; }
 };
 

@@ -16,6 +16,7 @@ class cMedico:
 private:
 	const string Num_Matricula;
 	string Especialidad;
+
 public:
 	cMedico(const string dni, string nombre, eSexo sexo, const cFechayHora* fechaNacimiento, const string num_Matricula, string especialidad);
 	~cMedico();

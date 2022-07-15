@@ -17,7 +17,7 @@ public:
 	cIntervencion(cMedico* medico, string diagnostico, float montoAbonar);
 	virtual ~cIntervencion(); //debe ser virtual
 
-	virtual void RealizarIntervencion(cHistoriaClinica* historiaClinica, cPaciente* paciente) = 0;
+	virtual void RealizarIntervencion(cHistoriaClinica* historiaClinica) = 0;
 
 	void setDiagnostico(string diagnostico) { this->Diagnostico = diagnostico; }
 
@@ -27,7 +27,7 @@ public:
 
 };
 
-//Clase cirugia
+///////////////////////Clase cirugia
 
 class cCirugia :
 	public cIntervencion
@@ -55,7 +55,7 @@ public:
 	cLista_template<cMedicamento>* getListaMedicamentos() { return ListaMedicamentos; }
 };
 
-//Clase Consultas
+///////////////////////////Clase Consultas
 class cConsultas :
 	public cIntervencion
 {
@@ -72,7 +72,7 @@ public:
 	void setIndicaciones(string indicaciones) { this->Indicaciones = indicaciones; }
 };
 
-//Clase Practicas
+/////////////////////////////Clase Practicas
 class cPracticas :
 	public cIntervencion
 {
