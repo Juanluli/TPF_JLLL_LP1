@@ -94,12 +94,12 @@ void cSistema::CalcularGanancia(float& ganancias, int& cantPracticas, int& cantC
 	cantCirugias = 0;
 	cantConsultas = 0;
 
-	while (this->Lista_historiasClinicas->operator[](i) != NULL) { //va a ir recorriendo la lista
+	while (this->Lista_historiasClinicas->operator[](i) != NULL) { //va a ir recorriendo la lista de historias clinicas
 		int j = 0;
 		cHistoriaClinica* aux = this->Lista_historiasClinicas->operator[](i); //le asignamos el elemento de la lista en esa posicion
 
 		while (aux->Lista_intervenciones->operator[](j) != NULL) {
-			cFechayHora* fyh = aux->Lista_intervenciones->operator[](j)->getFechayHoraIntervencion(); //la fyh de cada intervencion de la lista la guarda en fyh
+			cFechayHora* fyh = aux->Lista_intervenciones->operator[](j)->getFechayHoraIntervencion(); //la fyh de cada intervencion de la lista de intervenciones la guarda en fyh
 
 			if (fyh->get_anio() == actual.get_anio() && fyh->get_mes() == actual.get_mes()) {
 				cCirugia* auxCirugia = dynamic_cast<cCirugia*>(aux->Lista_intervenciones->operator[](j));
@@ -114,8 +114,6 @@ void cSistema::CalcularGanancia(float& ganancias, int& cantPracticas, int& cantC
 				if (auxPracticas != NULL) {
 					cantPracticas++;
 				}
-
-				//
 				ganancias = ganancias + aux->Lista_intervenciones->operator[](j)->getMontoAbonar(); //la cantidad de intervenciones realizadas aumenta el monto a abonar
 			}
 			else break;

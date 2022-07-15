@@ -28,8 +28,8 @@ int main()
 
 	cCirugia* cirugia1 = new cCirugia(medico1, "Tiene una neumonía", 40000, true, medico2, enfermero1, "Operacion pulmonar", 125 );
 	cCirugia* cirugia2 = new cCirugia(medico2, "Tiene diverticulosis", 30000, true, medico1, enfermero1, "Operacion digestiva", 160);
-	cConsultas* consulta1 = new cConsultas(medico1, "Derivacion a especialista", 20000, "Paracetamol");
-	cConsultas* consulta2 = new cConsultas(medico2, "Reconocimiento inespecifico", 15000, "Sin indicaciones");
+	cConsultas* consulta1 = new cConsultas(medico1, "Reconocimiento inespecifico", 20000, "Sin indicaciones");
+	cConsultas* consulta2 = new cConsultas(medico2, "Derivacion a especialista", 15000, "Paracetamol"); 
 	cPracticas* practica1 = new cPracticas(medico1, "Requiere cirugia", 30000, "El paciente presenta un edema agudo de pulmon", true);
 	cPracticas* practica2 = new cPracticas(medico2, "Paciente en estado crítico", 25000, "El paciente necesita ser ingresado en la UCI", true);
 
@@ -45,6 +45,7 @@ int main()
 	Sistema->Agregar(historiaClinica1, medico1);
 	Sistema->Agregar(historiaClinica2, medico2);
 	Sistema->Agregar(historiaClinica3, enfermero1);
+	cout << "El Sistema conformado por las Historias Clinicas: " << historiaClinica1 << ", " << historiaClinica2 << " y " << historiaClinica3 << endl;
 
 	float gananacias;
 	int cant_practicas;
@@ -53,7 +54,7 @@ int main()
 
 	// ponerlo para que ponga bien las cantidades
 	Sistema->CalcularGanancia(gananacias, cant_practicas, cant_cirugias, cant_consultas);
-	cout << "El monto de dinero recaudado ha sido de: " << gananacias << " pesos" << endl;
+	cout << "Ha recaudado un monto de: " << gananacias << " pesos" << endl;
 	cout << "Con un total de " << cant_practicas << " practica, " << cant_cirugias << " cirugia y " << cant_consultas << " consulta" << endl;
 
 	int i = 0;
@@ -67,6 +68,21 @@ int main()
 		i++;
 	}
 
-
+	delete paciente1;
+	delete paciente2;
+	delete paciente3;
+	delete historiaClinica1;
+	delete historiaClinica2;
+	delete historiaClinica3;
+	delete medico1;
+	delete medico2;
+	delete enfermero1;
+	delete enfermero2;
+	delete cirugia1;
+	delete cirugia2;
+	delete consulta1;
+	delete consulta2;
+	delete practica1;
+	delete practica2;
 
 }
