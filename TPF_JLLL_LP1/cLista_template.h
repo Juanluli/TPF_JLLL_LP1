@@ -26,7 +26,7 @@ public:
 	void operator+(t* objeto);
 	t* operator[](int i);
 
-	// friend ostream& operator<< <>(ostream&, const cLista_template<t>&); ///// LA HE COMENTADO YO
+	// friend ostream& operator<< <>(ostream&, const cLista_template<t>&); ///// 
 
 	int get_cant_actual() {
 		return this->Cant_actual;
@@ -53,11 +53,11 @@ cLista_template<t>::~cLista_template()
 {
 	if (this->Lista != NULL)
 	{
-		for (int i = 0; i < this->Cant_actual; i++)
+		for (int i = 0; i < this->Cant_max; i++)
 		{
 			if (this->Lista[i] != NULL) {
-				this->Lista[i] = NULL;
 				delete this->Lista[i];
+				this->Lista[i] = NULL;
 			}
 		}
 		delete this->Lista;

@@ -4,13 +4,13 @@ cIntervencion::cIntervencion(cMedico* medico, string diagnostico, float montoAbo
 {
 	this->Medico = medico;
 	this->Diagnostico = diagnostico;
-	this->FechayHoraIntervencion = new cFechayHora(); ///// ?lo creo din?mico con un "new"?
+	this->FechayHoraIntervencion = new cFechayHora(); 
 	this->MontoAbonar = montoAbonar;
 }
 
 cIntervencion::~cIntervencion()
 {
-
+	delete this->FechayHoraIntervencion;
 }
 
 /////////////////Clase Cirugia
@@ -20,7 +20,7 @@ cCirugia::cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool 
 	this->MedicoAd = medicoAd;
 	this->Enfermero = enfermero;
 	this->NombreProcedimiento = nombreProcedimiento;
-	this->FechayHoraInicio = new cFechayHora;
+	this->FechayHoraInicio = new cFechayHora();
 	this->Duracion = duracion;
 	this->ListaMedicamentos = new cLista_template<cMedicamento>();
 	this->FechaAlta = new cFechayHora();
@@ -28,20 +28,22 @@ cCirugia::cCirugia(cMedico* medico, string diagnostico, float montoAbonar, bool 
 
 cCirugia::~cCirugia()
 {
-
+	delete this->FechayHoraInicio;
+	delete this->ListaMedicamentos;
+	delete this->FechaAlta;
 }
 
 void cCirugia::RealizarIntervencion(cHistoriaClinica* historiaClinica) {
 	
 	if (this->Prequirurgico(historiaClinica->getPaciente())) {
-			cFechayHora actual;
+			cFechayHora* actual = new cFechayHora();
 			if (this->Ambulatorio == true) {
 			historiaClinica->setInternado(false); // indica que la cirugia no es ambulatoria
-			this->FechaAlta = &actual;
+			this->FechaAlta = actual;
 			}
 			else {
 				historiaClinica->setInternado(true);
-				this->FechaAlta = new cFechayHora(actual.get_anio(), actual.get_mes() + rand() % 2 + 1, actual.get_dia() % 3 + 1);
+				this->FechaAlta = new cFechayHora(actual->get_anio(), actual->get_mes() + rand() % 2 + 1, actual->get_dia() % 3 + 1);
 			}
 	}
 	else {

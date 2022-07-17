@@ -7,7 +7,8 @@ cSistema::cSistema()
 }
 
 cSistema::~cSistema() {
-
+	delete this->Lista_historiasClinicas;
+	delete this->Lista_personal;
 }
 
 void cSistema::Agregar(cHistoriaClinica* historiaClinica, cPersonal* personal)
@@ -126,7 +127,6 @@ void cSistema::CalcularGanancia(float& ganancias, int& cantPracticas, int& cantC
 void cSistema::MedicamentoMasUsado()
 {
 	int i = 0;
-
 	while (this->Lista_historiasClinicas->operator[](i) != NULL) {
 		int j = 0;
 		cHistoriaClinica* aux = this->Lista_historiasClinicas->operator[](i);

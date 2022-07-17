@@ -9,5 +9,5 @@ cMedicamento::cMedicamento(string nombre, string marca, cFechayHora* fechaVencim
 
 cMedicamento::~cMedicamento()
 {
-
+	
 }
