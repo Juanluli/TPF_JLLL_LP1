@@ -55,7 +55,7 @@ int main()
 	Sistema->Agregar(historiaClinica2, medico2);
 	Sistema->Agregar(historiaClinica3, enfermero1);
 	cout << "El Sistema conformado por las Historias Clinicas: " << historiaClinica1 << ", " << historiaClinica2 << " y " << historiaClinica3 << endl;
-	cout << Sistema->getListaHistoriasClinicas()->operator[](0)->getInternado() << " " << Sistema->getListaHistoriasClinicas()->operator[](1)->getInternado() << " " << Sistema->getListaHistoriasClinicas()->operator[](2)->getInternado() << endl;
+	
 	float gananacias;
 	int cant_practicas;
 	int cant_cirugias;
